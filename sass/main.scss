@@ -1,0 +1,58 @@
+$color--main-dark: rgba(255, 255, 255, 0.75);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: 100vh;
+  padding: 4em;
+  color: $color--main-dark;
+  font-family: 'Anonymous Pro',monospace;
+  background-color: rgb(25, 25, 25);
+}
+
+
+.line{
+  position: relative;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-radius: 2px solid $color--main-dark;
+  -webkit-border-radius: 2px solid $color--main-dark;
+  -moz-border-radius: 2px solid $color--main-dark;
+  -ms-border-radius: 2px solid $color--main-dark;
+  -o-border-radius: 2px solid $color--main-dark;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+  -webkit-animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter{
+  from{
+    width: 0;
+  }
+  to{
+    width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor{
+  from{
+    border-right-color: rgb($color--main-dark);
+  }
+  to{
+    border-right-color: transparent;
+  }
+}

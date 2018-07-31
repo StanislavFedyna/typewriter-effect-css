@@ -1,0 +1,33 @@
+html {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Anonymous Pro',monospace;
+  height: 100vh;
+  padding: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #191919;
+}
+
+.line {
+  font-size: 180%;
+  position: relative;
+  top: 50%;
+  overflow: hidden;
+  width: 16em;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-border-radius: 2px solid rgba(255, 255, 255, 0.75);
+  -moz-border-radius: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 2px solid rgba(255, 255, 255, 0.75);
+  -ms-border-radius: 2px solid rgba(255, 255, 255, 0.75);
+  -o-border-radius: 2px solid rgba(255, 255, 255, 0.75);
+}

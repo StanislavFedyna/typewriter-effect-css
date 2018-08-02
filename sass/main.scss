@@ -6,7 +6,7 @@ html{
   overflow: hidden;
 }
 body{
-  height: 100vh;
+  height: calc(100vh - 8em);
   padding: 4em;
   color: $color--main-dark;
   font-family: 'Anonymous Pro',monospace;
@@ -19,11 +19,11 @@ body{
   top: 50%;
   width: 16em;
   margin: 0 auto;
-  border-radius: 2px solid $color--main-dark;
-  -webkit-border-radius: 2px solid $color--main-dark;
-  -moz-border-radius: 2px solid $color--main-dark;
-  -ms-border-radius: 2px solid $color--main-dark;
-  -o-border-radius: 2px solid $color--main-dark;
+  border-right: 2px solid $color--main-dark;
+  -webkit-border-right: 2px solid $color--main-dark;
+  -moz-border-right: 2px solid $color--main-dark;
+  -ms-border-right: 2px solid $color--main-dark;
+  -o-border-right: 2px solid $color--main-dark;
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
@@ -50,7 +50,7 @@ body{
 
 @keyframes blinkTextCursor{
   from{
-    border-right-color: rgb($color--main-dark);
+    border-right-color: rgba($color--main-dark);
   }
   to{
     border-right-color: transparent;
